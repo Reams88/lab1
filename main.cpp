@@ -1,4 +1,4 @@
-// компілятор: GCC 16
+// компілятор: g++ (GCC) 16.2.1
 #include <iostream>
 #include <vector>
 #include <random>
@@ -142,7 +142,7 @@ int main() {
       
       println("\nDistribution:");
       for (auto const& [s, count] : st.freqs) {
-        println("Size {:2d}: {:5.2f}%", s, (count * 100.0) / nDeals);
+        println("Size {:2d}: {:5.5f}%", s, (count * 100.0) / nDeals);
       }
       println("\nMode   : {}\nMean   : {:.2f}\nMedian : {:.2f}", st.mode, st.mean, st.median);
     } 
